@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  background-image: linear-gradient(to right, #fffffb 50%, #f8f8fa 50%);
+}
+
+.main-wrapper {
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#popap {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 600px;
+  height: 316px;
+  background-color: #302929e8;
+  border-radius: 25px;
+  top: 0;
+  left: calc(50% - 300px);
+  z-index: 99;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+}
+
+.close svg {
+  width: 35px;
+  height: 35px;
+  fill: #f8f8fa;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#message-text {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #f8f8fa;
+  text-align: center;
+}
+
+.header {
+  padding-top: 27px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  padding: 112px 0 191px;
+}
+
+.content-left {
+  padding: 0 41px 0 63px;
+}
+
+.content-left__title {
+  height: 56px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.content-left__text {
+  height: 81px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #636363;
+  margin-bottom: 42px;
+}
+
+.form > div {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form > div > input {
+  box-sizing: border-box;
+  width: 452px;
+  height: 60px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #c6c6c4;
+  font-weight: 700;
+  font-size: 20px;
+  color: #323232;
+  outline: none;
+  padding-top: 20px;
+}
+
+.form > div > span {
+  font-weight: 700;
+  font-size: 16px;
+  color: #c6c6c4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.agreement {
+  padding-top: 10px;
+}
+
+.agreement > label {
+  font-weight: 700;
+  font-size: 16px;
+  color: #636363;
+  cursor: pointer;
+}
+
+#check {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+#btn {
+  margin-left: 124px;
+  margin-top: 40px;
+}
+
+.button input[type="button"] {
+  width: 210px;
+  height: 70px;
+  background: #dd3142;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  padding: 21px 0 21px 0;
+  cursor: pointer;
+  border: none;
+  transition: background 0.8s ease;
+}
+
+.button input[type="button"]:hover {
+  background: #9b2430;
+}
+.already-have-account {
+  margin-top: 44px;
+}
+
+.already-have-account > a {
+  display: inline-block;
+  padding-left: 138px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: #636363;
+}
+
+.already-have-account > a:hover {
+  color: #dd3142;
+}
+
+.content-right__image {
+  width: 543px;
+  height: 600px;
+  margin-top: 60px;
+  margin-right: 46px;
+}
+
+.content-right__image > img {
+  width: 100%;
+}
+
+.valid-error{
+  color: red;
+  font-size: 16px;
+  max-width: 453px;
+  font-weight: 700;
+}
+
+.input-error {
+border-bottom: 2px solid red !important;
+/* animation: glowingBorder 1s infinite; */
+}
+
+@keyframes glowingBorder {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 5px red;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
+
+.password {
+	position: relative;
+}
+#password-hide, #password-view {
+	position: absolute;
+	top: 11px;
+	right: 80px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+#password-view {
+  display: none;
+}
+#password-view svg, #password-hide svg  {
+ fill:#c6c6c4;
+}
+
+
